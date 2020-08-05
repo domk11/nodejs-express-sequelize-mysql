@@ -1,11 +1,10 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-
 const app = express();
 
 var corsOptions = {
-  origin: "http://localhost:8081"
+  origin: "http://localhost:8080"
 };
 
 app.use(cors(corsOptions));
@@ -26,13 +25,13 @@ db.sequelize.sync();
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to bezkoder application." });
+  res.json({ message: "Welcome to SENV3" });
 });
 
 require("./app/routes/turorial.routes")(app);
 
 // set port, listen for requests
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
