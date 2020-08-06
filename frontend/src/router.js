@@ -21,6 +21,26 @@ export default new Router({
       path: "/add",
       name: "add",
       component: () => import("./components/AddTutorial")
+    },
+	{
+      path: "/articles",
+      name: "articles",
+      component: () => import("./components/ArticlesList")
+    },
+	{
+      path: "/articles/add",
+      name: "add-article",
+      component: () => import("./components/AddArticle")
+    },
+	{
+      path: "/articles/:id",
+      name: "article-details",
+      component: () => import("./components/Article")
+    },
+    {
+      path: "/testpage/",
+      name: "testpage",
+      component: () => import("./components/test")
     }
   ]
 });

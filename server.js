@@ -29,6 +29,7 @@ app.get("/", (req, res) => {
 });
 
 require("./routes/turorial.routes")(app);
+require("./routes/article.routes")(app);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 4000;

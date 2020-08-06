@@ -9,6 +9,9 @@
         <li class="nav-item">
           <a href="/add" class="nav-link">Add</a>
         </li>
+        <li class="nav-item">
+          <a href="/testpage" class="nav-link">test</a>
+        </li>
       </div>
     </nav>
 
